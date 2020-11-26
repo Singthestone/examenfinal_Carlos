@@ -19,20 +19,45 @@
     height: $header_mobile;
     padding: convertir(13.25) convertir(19.62);
     background-color: $color-grey;
+    display: flex;
+    // position: relative;
+}
+
+.header__logotipo {
+    font-size: $fs_header;
+    // position: absolute;
+    // left: 40%;
+    padding-left: convertir(90.63-19.62);
 }
 
 @include mediaQuery(ipad) {
     .header {
         height: $header_tablet;
         padding: convertir(19.25) convertir(21.62);
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .header__logotipo {
+        font-size: $fs_header;
+        padding-left: 0;
     }
 }
 
 @include mediaQuery(escritorio) {
     .header {
         height: $header_desktop;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .header__menu {
         display: none;
+    }
+    .header__logotipo {
+        font-size: $fs_header_desktop;
+        display: block;
+        position: absolute;
+        left: 35%;
     }
 }
