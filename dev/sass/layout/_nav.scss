@@ -15,7 +15,16 @@
 
 /* ******************************** */
 
-.right__menu {
-    display: flex;
-    justify-content: space-evenly;
+.header__nav {
+    display: none;
+}
+
+@include mediaQuery(escritorio) {
+    .header__nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: $fs_header;
+    }
 }

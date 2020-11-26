@@ -1,0 +1,38 @@
+/* ******************************** */
+
+
+/* ******************************** */
+
+
+/* HEADER */
+
+
+/* ******************************** */
+
+
+/* ******************************** */
+
+
+/* ******************************** */
+
+.header {
+    height: $header_mobile;
+    padding: convertir(13.25) convertir(19.62);
+    background-color: $color-grey;
+}
+
+@include mediaQuery(ipad) {
+    .header {
+        height: $header_tablet;
+        padding: convertir(19.25) convertir(21.62);
+    }
+}
+
+@include mediaQuery(escritorio) {
+    .header {
+        height: $header_desktop;
+    }
+    .header__menu {
+        display: none;
+    }
+}

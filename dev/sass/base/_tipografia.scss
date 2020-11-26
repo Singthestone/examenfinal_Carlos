@@ -15,19 +15,18 @@
 
 /* ******************************** */
 
+// Font-face para cargar ROBOTO
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto-Regular-webfont.woff") format("woff2"), url("font/Roboto-Regular-webfont.woff") format("woff");
+}
+
 // Tipografía Base
 $font_fz-base: convertir(16);
-$font: 'Arial',
-'Arial Black';
+$font: 'Roboto',
+'Arial';
 html {
     font-size: $font_fz-base;
     font-family: nth($font, 1), sans-serif;
     font-style: normal;
 }
-
-// Párrafo
-$font_fz-text: $font_fz-base;
-// Navegador
-$font_fz-nav: convertir(24);
-// Botón
-$font_fz-btn: $font_fz-base;
