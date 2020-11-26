@@ -31,6 +31,7 @@ html {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  font-weight: 400;
 }
 
 /* ******************************** */
@@ -256,10 +257,74 @@ body {
 }
 /* ******************************** */
 /* ******************************** */
-/* SECTION */
+/* SECTION01*/
 /* ******************************** */
 /* ******************************** */
 /* ******************************** */
+.main__bloque01 {
+  position: absolute;
+  top: 53%;
+  background-color: #ffffff;
+  opacity: 0.65;
+}
+
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (min-device-width: 768px) and (max-device-width: calc(768px + 100px)) and (orientation: portrait) {
+  .main__bloque01 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
+/* ******************************** */
+/* ******************************** */
+/* SECTION02*/
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+.main__bloque02 {
+  position: absolute;
+  top: 104%;
+  background-color: #ffffff;
+  opacity: 0.65;
+}
+
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (min-device-width: 768px) and (max-device-width: calc(768px + 100px)) and (orientation: portrait) {
+  .main__bloque02 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
 /* ******************************** */
 /* ******************************** */
 /* NAV */

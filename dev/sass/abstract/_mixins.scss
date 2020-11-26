@@ -17,7 +17,6 @@
 
 @mixin mediaQuery($query) {
     $queries: ( mobil-peke: '(max-device-width: #{$breakpoint-small}) and (orientation: portrait)', mobil: '(min-device-width: #{$breakpoint-small}) and (max-device-width: calc(#{$breakpoint-small} + 100px)) and (orientation: portrait)', ipad: '(min-device-width: #{$breakpoint-medium}) and (max-device-width: calc(#{$breakpoint-medium} + 100px)) and (orientation: portrait)', ipad-horiz: '(min-device-width: #{$breakpoint-medium}) and (orientation: landscape)', escritorio: '(min-width: #{$breakpoint-large})');
-
     //Horizontal Smartphone
     @media (min-device-width: #{$breakpoint-small}) and (max-device-width: calc(#{$breakpoint-small} + 100px)) and (orientation: landscape) {
         #capaBloqueo {
