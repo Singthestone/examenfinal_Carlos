@@ -18,7 +18,7 @@
 .header {
     height: $header_mobile;
     padding: convertir(13.25) convertir(19.62);
-    background-color: $color-grey;
+    background-color: $color-header;
     display: flex;
     // position: relative;
 }
@@ -27,7 +27,7 @@
     font-size: $fs_header;
     // position: absolute;
     // left: 40%;
-    padding-left: convertir(90.63-19.62);
+    padding-left: convertir(115.62-30.75);
 }
 
 @include mediaQuery(ipad) {
